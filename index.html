@@ -291,11 +291,11 @@ footer{background:var(--dark);color:#666;padding:40px 20px;border-top:1px solid 
 <h3 style="margin-bottom:20px">Quick Contact Form</h3>
 <p style="color:#666;margin-bottom:20px">Fill this out and I'll send your free audit within 24 hours.</p>
 <form onsubmit="handleFormSubmit(event)" style="display:grid;gap:15px;text-align:left">
-<input type="text" placeholder="Your Name" required style="padding:12px;border:1px solid #ddd;border-radius:6px">
-<input type="email" placeholder="Your Email" required style="padding:12px;border:1px solid #ddd;border-radius:6px">
-<input type="tel" placeholder="Your Phone" required style="padding:12px;border:1px solid #ddd;border-radius:6px">
-<input type="text" placeholder="Business Name" required style="padding:12px;border:1px solid #ddd;border-radius:6px">
-<textarea placeholder="What service are you interested in?" rows="3" style="padding:12px;border:1px solid #ddd;border-radius:6px"></textarea>
+<input type="text" name="name" placeholder="Your Name" required style="padding:12px;border:1px solid #ddd;border-radius:6px">
+<input type="email" name="email" placeholder="Your Email" required style="padding:12px;border:1px solid #ddd;border-radius:6px">
+<input type="tel" name="phone" placeholder="Your Phone" required style="padding:12px;border:1px solid #ddd;border-radius:6px">
+<input type="text" name="business" placeholder="Business Name" required style="padding:12px;border:1px solid #ddd;border-radius:6px">
+<textarea name="message" placeholder="What service are you interested in?" rows="3" style="padding:12px;border:1px solid #ddd;border-radius:6px"></textarea>
 <button type="submit" class="contact-btn" style="margin-top:0">Send My Info</button>
 </form>
 </div>
@@ -331,9 +331,29 @@ footer{background:var(--dark);color:#666;padding:40px 20px;border-top:1px solid 
 <script>
 function handleFormSubmit(event){
 event.preventDefault();
-const formData = new FormData(event.target);
-alert('Thanks for reaching out! I\'ll send you a free Google Maps audit within 24 hours. Check your email at ' + formData.get('email'));
-event.target.reset();
+const form = event.target;
+const formData = {
+name: form.elements.name.value,
+email: form.elements.email.value,
+phone: form.elements.phone.value,
+business: form.elements.business.value,
+message: form.elements.message.value
+};
+
+fetch('https://braylonw.app.n8n.cloud/webhook-test/997a16ef-a199-46fb-872a-d9051d374a94', {
+method: 'POST',
+headers: {'Content-Type': 'application/json'},
+body: JSON.stringify(formData)
+})
+.then(res => res.json())
+.then(data => {
+alert('Thanks! I received your info. Check your email for your free audit within 24 hours.');
+form.reset();
+})
+.catch(err => {
+alert('Error sending form. Call me directly: (402) 443-2909');
+console.error(err);
+});
 }
 </script>
 
