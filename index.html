@@ -122,6 +122,7 @@ footer{background:var(--dark);color:#666;padding:50px 20px;border-top:1px solid 
 .section-head h2{font-size:36px}
 .contact-container h2{font-size:36px}
 .services-grid{grid-template-columns:1fr}
+div[style*="grid-template-columns:1fr 1fr"]{grid-template-columns:1fr !important}
 }
 </style>
 </head>
@@ -341,44 +342,54 @@ footer{background:var(--dark);color:#666;padding:50px 20px;border-top:1px solid 
 <!-- CASE STUDY - HARRIS GROVE -->
 <section style="padding:100px 20px;background:#fff;border-bottom:1px solid var(--border)">
 <div style="max-width:1200px;margin:0 auto">
-<div class="section-head" style="text-align:center;margin-bottom:60px">
+<div class="section-head" style="text-align:center;margin-bottom:80px">
 <div class="section-label">Real Results</div>
-<h2>How We Get Contractors More Calls</h2>
-<p>Harris Grove Cabinetries went from buried online to top 3 in local search. See the timeline.</p>
+<h2 style="font-size:48px;margin-bottom:20px">How We Get Contractors More Calls</h2>
+<p style="font-size:16px;max-width:700px;margin-left:auto;margin-right:auto">Harris Grove Cabinetries went from buried online to top 3 in local search. See the timeline.</p>
 </div>
 
-<div style="display:grid;grid-template-columns:1fr 1fr;gap:50px;align-items:flex-start">
+<div style="display:grid;grid-template-columns:1fr 1fr;gap:60px;align-items:flex-start;max-width:1300px">
 
 <!-- LEFT: HARRIS GROVE LIVE SITE PREVIEW -->
 <div style="border:3px solid var(--primary);border-radius:14px;overflow:hidden;box-shadow:0 10px 40px rgba(31,69,232,0.15);background:#fff">
-<div style="background:linear-gradient(180deg,rgba(0,0,0,0.4) 0%,rgba(0,0,0,0.2) 100%),url('data:image/svg+xml,<svg xmlns=%22http://www.w3.org/2000/svg%22 viewBox=%220 0 800 500%22><rect fill=%22%23d4af8a%22 width=%22800%22 height=%22500%22/><rect fill=%22%238b6f47%22 x=%220%22 y=%220%22 width=%22800%22 height=%2280%22/></svg>');background-size:cover;background-position:center;padding:40px 20px;color:#fff;text-align:center;height:320px;display:flex;flex-direction:column;justify-content:space-between;position:relative">
-<div style="position:relative;z-index:2">
-<div style="font-size:12px;font-weight:600;opacity:0.95;margin-bottom:8px">4.8 ★★★★★</div>
-<h3 style="font-size:24px;font-weight:800;color:#fff;margin-bottom:6px">Harris Grove Cabinetries</h3>
-<div style="font-size:12px;opacity:0.9">Premium Custom Cabinets — Omaha, NE</div>
+<div style="background:linear-gradient(180deg,#3d2f1f 0%,#8b6f47 100%);padding:32px 24px;color:#fff;text-align:center;min-height:140px;display:flex;flex-direction:column;justify-content:center;align-items:center">
+<div style="font-size:28px;margin-bottom:8px">★★★★★</div>
+<div style="font-size:18px;font-weight:700;margin-bottom:4px">4.8 Stars</div>
+<h3 style="font-size:26px;font-weight:800;color:#fff;margin:0">Harris Grove Cabinetries</h3>
+<div style="font-size:13px;opacity:0.9;margin-top:8px">Premium Custom Cabinets — Omaha, NE</div>
 </div>
-<div style="position:relative;z-index:2;background:rgba(255,255,255,0.15);border-radius:8px;padding:16px;backdrop-filter:blur(4px)">
-<div style="font-size:13px;color:#fff;margin-bottom:8px">✓ Google Maps Top 3</div>
-<div style="font-size:13px;color:#fff;margin-bottom:8px">✓ 4.8 Stars (21 Reviews)</div>
-<div style="font-size:13px;color:#fff">✓ Getting Qualified Leads Daily</div>
+
+<div style="padding:32px;background:#f8fafc">
+<div style="display:grid;gap:14px;margin-bottom:24px">
+<div style="background:#fff;border-left:4px solid var(--primary);padding:16px;border-radius:8px">
+<div style="font-size:12px;color:var(--gray);margin-bottom:4px">Ranking</div>
+<div style="font-size:16px;font-weight:700;color:var(--dark)">✓ Google Maps Top 3</div>
+</div>
+<div style="background:#fff;border-left:4px solid var(--primary);padding:16px;border-radius:8px">
+<div style="font-size:12px;color:var(--gray);margin-bottom:4px">Reviews</div>
+<div style="font-size:16px;font-weight:700;color:var(--dark)">✓ 21 Verified Reviews</div>
+</div>
+<div style="background:#fff;border-left:4px solid var(--primary);padding:16px;border-radius:8px">
+<div style="font-size:12px;color:var(--gray);margin-bottom:4px">Status</div>
+<div style="font-size:16px;font-weight:700;color:var(--dark)">✓ Getting Leads Daily</div>
 </div>
 </div>
-<div style="padding:24px;background:#fff;text-align:center">
-<a href="https://www.harrisgrovecabinetries.com/" target="_blank" style="display:inline-block;color:#fff;font-weight:700;font-size:13px;padding:12px 32px;background:var(--primary);border-radius:8px;text-decoration:none;transition:.2s" onmouseover="this.style.background='#1a36c4'" onmouseout="this.style.background='var(--primary)'">View Live Site →</a>
+
+<a href="https://www.harrisgrovecabinetries.com/" target="_blank" style="display:block;color:#fff;font-weight:700;font-size:14px;padding:14px;background:var(--primary);border-radius:8px;text-decoration:none;transition:.2s;text-align:center" onmouseover="this.style.background='#1a36c4'" onmouseout="this.style.background='var(--primary)'">View Live Site →</a>
 </div>
 </div>
 
 <!-- RIGHT: TIMELINE -->
 <div>
-<h3 style="font-size:28px;font-weight:700;margin-bottom:40px;color:#1a202c">The Results Timeline</h3>
+<h3 style="font-size:32px;font-weight:700;margin-bottom:40px;color:#1a202c">The Results Timeline</h3>
 
 <!-- Timeline item 1 -->
 <div style="margin-bottom:40px;padding-bottom:40px;border-bottom:2px solid #e5e7eb">
 <div style="display:flex;gap:20px;align-items:flex-start">
-<div style="background:var(--primary);color:#fff;width:32px;height:32px;min-width:32px;border-radius:50%;display:flex;align-items:center;justify-content:center;font-weight:700;font-size:14px;margin-top:2px">1</div>
+<div style="background:var(--primary);color:#fff;width:36px;height:36px;min-width:36px;border-radius:50%;display:flex;align-items:center;justify-content:center;font-weight:700;font-size:14px;margin-top:2px">1</div>
 <div>
-<div style="font-weight:700;color:#1a202c;font-size:15px">Week 1-2: Profile Optimization</div>
-<div style="color:var(--gray);font-size:13px;margin-top:6px;line-height:1.6">Google Business Profile optimized. 15+ directories submitted (Yelp, HomeAdvisor, Angie's List, ThumbTack, etc.)</div>
+<div style="font-weight:700;color:#1a202c;font-size:16px">Week 1-2: Profile Optimization</div>
+<div style="color:var(--gray);font-size:14px;margin-top:8px;line-height:1.6">Google Business Profile optimized. 15+ directories submitted (Yelp, HomeAdvisor, Angie's List, ThumbTack, etc.)</div>
 </div>
 </div>
 </div>
@@ -386,10 +397,10 @@ footer{background:var(--dark);color:#666;padding:50px 20px;border-top:1px solid 
 <!-- Timeline item 2 -->
 <div style="margin-bottom:40px;padding-bottom:40px;border-bottom:2px solid #e5e7eb">
 <div style="display:flex;gap:20px;align-items:flex-start">
-<div style="background:var(--primary);color:#fff;width:32px;height:32px;min-width:32px;border-radius:50%;display:flex;align-items:center;justify-content:center;font-weight:700;font-size:14px;margin-top:2px">2</div>
+<div style="background:var(--primary);color:#fff;width:36px;height:36px;min-width:36px;border-radius:50%;display:flex;align-items:center;justify-content:center;font-weight:700;font-size:14px;margin-top:2px">2</div>
 <div>
-<div style="font-weight:700;color:#1a202c;font-size:15px">Week 3-4: Rankings Improve</div>
-<div style="color:var(--gray);font-size:13px;margin-top:6px;line-height:1.6">Google Maps rankings climb. Harris Grove starts showing in top 5 for "cabinets near me"</div>
+<div style="font-weight:700;color:#1a202c;font-size:16px">Week 3-4: Rankings Improve</div>
+<div style="color:var(--gray);font-size:14px;margin-top:8px;line-height:1.6">Google Maps rankings climb. Harris Grove starts showing in top 5 for "cabinets near me"</div>
 </div>
 </div>
 </div>
@@ -397,20 +408,20 @@ footer{background:var(--dark);color:#666;padding:50px 20px;border-top:1px solid 
 <!-- Timeline item 3 -->
 <div style="margin-bottom:40px;padding-bottom:40px;border-bottom:2px solid #2563eb;background:linear-gradient(135deg,#f0f9ff 0%,#e0f2fe 100%);padding:20px;border-radius:10px;margin-left:-20px;padding-left:40px">
 <div style="display:flex;gap:20px;align-items:flex-start">
-<div style="background:#2563eb;color:#fff;width:32px;height:32px;min-width:32px;border-radius:50%;display:flex;align-items:center;justify-content:center;font-weight:700;font-size:16px;margin-top:2px">✓</div>
+<div style="background:#2563eb;color:#fff;width:36px;height:36px;min-width:36px;border-radius:50%;display:flex;align-items:center;justify-content:center;font-weight:700;font-size:16px;margin-top:2px">✓</div>
 <div>
-<div style="font-weight:700;color:#1a202c;font-size:15px">Day 30: Top 3 Ranking</div>
-<div style="color:var(--gray);font-size:13px;margin-top:6px;line-height:1.6"><strong style="color:#1a202c">Ranking in top 3 for local searches.</strong> Calls start coming in consistently.</div>
+<div style="font-weight:700;color:#1a202c;font-size:16px">Day 30: Top 3 Ranking</div>
+<div style="color:var(--gray);font-size:14px;margin-top:8px;line-height:1.6"><strong style="color:#1a202c">Ranking in top 3 for local searches.</strong> Calls start coming in consistently.</div>
 </div>
 </div>
 </div>
 
 <!-- Timeline item 4 -->
 <div style="display:flex;gap:20px;align-items:flex-start;background:linear-gradient(135deg,#fef3c7 0%,#fde68a 100%);padding:20px;border-radius:10px;margin-left:-20px;padding-left:40px">
-<div style="background:var(--primary);color:#fff;width:32px;height:32px;min-width:32px;border-radius:50%;display:flex;align-items:center;justify-content:center;font-weight:700;font-size:14px;margin-top:2px">$</div>
+<div style="background:var(--primary);color:#fff;width:36px;height:36px;min-width:36px;border-radius:50%;display:flex;align-items:center;justify-content:center;font-weight:700;font-size:14px;margin-top:2px">$</div>
 <div>
-<div style="font-weight:700;color:#1a202c;font-size:15px">Day 60: Revenue Impact</div>
-<div style="color:var(--gray);font-size:13px;margin-top:6px;line-height:1.6"><strong style="color:#92400e">20-30% more calls per month.</strong> One extra call per day pays for the service 10x over.</div>
+<div style="font-weight:700;color:#1a202c;font-size:16px">Day 60: Revenue Impact</div>
+<div style="color:var(--gray);font-size:14px;margin-top:8px;line-height:1.6"><strong style="color:#92400e">20-30% more calls per month.</strong> One extra call per day pays for the service 10x over.</div>
 </div>
 </div>
 
