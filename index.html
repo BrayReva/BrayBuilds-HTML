@@ -97,6 +97,8 @@ header{background:linear-gradient(135deg,#fff 0%,#f8fafc 100%);padding:100px 20p
 .contact-buttons{display:flex;gap:12px;justify-content:center;flex-wrap:wrap;margin-bottom:48px}
 .contact-btn{background:var(--dark);color:#fff;padding:12px 28px;border-radius:8px;font-weight:600;border:none;cursor:pointer;font-size:14px;transition:.2s;box-shadow:0 2px 8px rgba(0,0,0,0.1)}
 .contact-btn:hover{background:var(--primary);transform:translateY(-2px);box-shadow:0 4px 12px rgba(31,69,232,0.2)}
+.service-card .price{font-size:42px;font-weight:800;color:var(--primary);margin:24px 0 6px;letter-spacing:-1px}
+.service-card .price-period{font-size:14px;color:var(--gray);font-weight:500}
 .form-embed{background:#fafbfc;border-radius:12px;padding:40px;border:1px solid var(--border);text-align:center}
 .form-embed h3{font-size:20px;font-weight:700;margin-bottom:12px;letter-spacing:-0.3px}
 .form-embed p{color:var(--gray);margin-bottom:24px;font-size:14px;font-weight:500}
@@ -138,26 +140,6 @@ footer{background:var(--dark);color:#666;padding:50px 20px;border-top:1px solid 
 <button class="cta-btn" onclick="document.getElementById('contact').scrollIntoView({behavior:'smooth'})">Request Audit</button>
 </nav>
 
-<!-- SCROLLING BAR -->
-<div class="scrolling-bar">
-<div class="scroll-content">
-<span class="scroll-item">✓ HVAC Contractors</span>
-<span class="scroll-item">✓ Plumbing Services</span>
-<span class="scroll-item">✓ Roofing Companies</span>
-<span class="scroll-item">✓ Electrical Services</span>
-<span class="scroll-item">✓ Home Remodeling</span>
-<span class="scroll-item">✓ Landscaping</span>
-<span class="scroll-item">✓ Painting Services</span>
-<span class="scroll-item">✓ Solar Installation</span>
-<span class="scroll-item">✓ HVAC Contractors</span>
-<span class="scroll-item">✓ Plumbing Services</span>
-<span class="scroll-item">✓ Roofing Companies</span>
-<span class="scroll-item">✓ Electrical Services</span>
-<span class="scroll-item">✓ Home Remodeling</span>
-<span class="scroll-item">✓ Landscaping</span>
-</div>
-</div>
-
 <!-- HERO -->
 <header>
 <div class="hero-grid">
@@ -180,6 +162,26 @@ footer{background:var(--dark);color:#666;padding:50px 20px;border-top:1px solid 
 </div>
 </header>
 
+<!-- SCROLLING BAR -->
+<div class="scrolling-bar">
+<div class="scroll-content">
+<span class="scroll-item">✓ HVAC Contractors</span>
+<span class="scroll-item">✓ Plumbing Services</span>
+<span class="scroll-item">✓ Roofing Companies</span>
+<span class="scroll-item">✓ Electrical Services</span>
+<span class="scroll-item">✓ Home Remodeling</span>
+<span class="scroll-item">✓ Landscaping</span>
+<span class="scroll-item">✓ Painting Services</span>
+<span class="scroll-item">✓ Solar Installation</span>
+<span class="scroll-item">✓ HVAC Contractors</span>
+<span class="scroll-item">✓ Plumbing Services</span>
+<span class="scroll-item">✓ Roofing Companies</span>
+<span class="scroll-item">✓ Electrical Services</span>
+<span class="scroll-item">✓ Home Remodeling</span>
+<span class="scroll-item">✓ Landscaping</span>
+</div>
+</div>
+
 <!-- SERVICES -->
 <section class="services" id="services">
 <div class="section-head">
@@ -196,14 +198,14 @@ footer{background:var(--dark);color:#666;padding:50px 20px;border-top:1px solid 
 </svg>
 </div>
 <h3>Google Maps Optimization</h3>
-<p class="desc">We handle everything. Your Google Business Profile gets optimized, citations go out to 15+ directories, reviews get generated, and your photos get professionally positioned. You rank higher. Customers find you first.</p>
-<div class="price">$1,500–$2,000</div>
+<p class="desc">We handle your complete Google presence. Your profile gets fully optimized, your business gets listed across 15+ major directories (Yelp, HomeAdvisor, Angie's List, ThumbTack, etc.), and we generate reviews. Google sees a legitimate, established business. You rank higher.</p>
+<div class="price">$1,500 – $2,000</div>
 <div class="price-period">per month</div>
 <ul>
-<li>Complete Google Business Profile audit & optimization</li>
-<li>Citation building & management (15+ directories)</li>
-<li>Review generation & response system</li>
-<li>Photo optimization & local schema markup</li>
+<li>Complete Google Business Profile optimization with photos & keywords</li>
+<li>Business listings across 15+ directories (Yelp, HomeAdvisor, Angie's List, ThumbTack, and more)</li>
+<li>Consistent name, address, phone verification everywhere</li>
+<li>Review generation system & response management</li>
 <li>Monthly ranking reports & competitor analysis</li>
 </ul>
 <button class="order-btn" onclick="document.getElementById('contact').scrollIntoView({behavior:'smooth'})">Learn More</button>
@@ -251,6 +253,40 @@ footer{background:var(--dark);color:#666;padding:50px 20px;border-top:1px solid 
 </div>
 </section>
 
+<!-- WHAT WE DO -->
+<section style="padding:120px 20px;background:#fff;border-bottom:1px solid var(--border)">
+<div style="max-width:1200px;margin:0 auto">
+<div class="section-head">
+<div class="section-label">Our Approach</div>
+<h2>Here's Exactly What We Do</h2>
+<p>No fluff. No fake promises. Here's the step-by-step breakdown of how we get you ranking higher.</p>
+</div>
+<div style="display:grid;grid-template-columns:1fr;gap:40px;max-width:900px;margin:0 auto">
+
+<div style="border-left:4px solid var(--primary);padding-left:30px;padding-top:20px;padding-bottom:20px">
+<h3 style="font-size:20px;font-weight:700;margin-bottom:12px;color:var(--dark)">1. Google Business Profile Optimization</h3>
+<p style="color:var(--gray);font-size:15px;font-weight:500;line-height:1.7">We audit your Google Business Profile and fix everything. Complete description with keywords, professional photos of your work, correct business type, accurate hours, and service areas. Google uses this to decide who ranks first.</p>
+</div>
+
+<div style="border-left:4px solid var(--primary);padding-left:30px;padding-top:20px;padding-bottom:20px">
+<h3 style="font-size:20px;font-weight:700;margin-bottom:12px;color:var(--dark)">2. Online Business Listings (15+ Directories)</h3>
+<p style="color:var(--gray);font-size:15px;font-weight:500;line-height:1.7">We submit your business to major platforms: Yelp, HomeAdvisor, Angie's List, ThumbTack, Google Maps, Facebook, and more. Every listing has consistent information (name, phone, address). When Google sees your business listed everywhere with matching details, it signals legitimacy and trust. This is a major ranking factor.</p>
+</div>
+
+<div style="border-left:4px solid var(--primary);padding-left:30px;padding-top:20px;padding-bottom:20px">
+<h3 style="font-size:20px;font-weight:700;margin-bottom:12px;color:var(--dark)">3. Review Generation & Management</h3>
+<p style="color:var(--gray);font-size:15px;font-weight:500;line-height:1.7">We set up a system for your customers to leave reviews on Google, Yelp, and other platforms. We respond to every review (good and bad). Google prioritizes businesses with consistent, recent reviews. More reviews = higher ranking.</p>
+</div>
+
+<div style="border-left:4px solid var(--primary);padding-left:30px;padding-top:20px;padding-bottom:20px">
+<h3 style="font-size:20px;font-weight:700;margin-bottom:12px;color:var(--dark)">4. Ranking Tracking & Reporting</h3>
+<p style="color:var(--gray);font-size:15px;font-weight:500;line-height:1.7">Every month, we track exactly where you rank for key searches like "HVAC near me" and "plumber Omaha." You get a detailed report showing your position, your competitors, and what's working. We make adjustments if needed.</p>
+</div>
+
+</div>
+</div>
+</section>
+
 <!-- HOW IT WORKS -->
 <section class="process" id="how">
 <div class="section-head">
@@ -290,6 +326,59 @@ footer{background:var(--dark);color:#666;padding:50px 20px;border-top:1px solid 
 </div>
 </section>
 
+<!-- PORTFOLIO / CLIENTS -->
+<section style="padding:120px 20px;background:#fafbfc;border-bottom:1px solid var(--border)">
+<div style="max-width:1200px;margin:0 auto">
+<div class="section-head">
+<div class="section-label">Portfolio</div>
+<h2>Clients We Work With</h2>
+<p>Helping local contractors rank higher and get more calls.</p>
+</div>
+<div style="display:grid;grid-template-columns:1fr 1fr 1fr;gap:30px;max-width:1200px;margin:0 auto">
+<div style="border:1px solid var(--border);border-radius:12px;padding:30px;text-align:center;background:#fff">
+<h3 style="font-size:18px;font-weight:700;margin-bottom:12px">Harris Grove Cabinetries</h3>
+<p style="color:var(--gray);font-size:13px;margin-bottom:16px;font-weight:500">Custom cabinetry & millwork. Ranking higher, getting qualified leads.</p>
+<a href="https://www.harrisgrovecabinetries.com/" target="_blank" style="color:var(--primary);font-weight:600;font-size:13px">View →</a>
+</div>
+<div style="border:1px solid var(--border);border-radius:12px;padding:30px;text-align:center;background:#fff">
+<h3 style="font-size:18px;font-weight:700;margin-bottom:12px">Meridian</h3>
+<p style="color:var(--gray);font-size:13px;margin-bottom:16px;font-weight:500">Custom web design & optimization.</p>
+<a href="#" style="color:var(--primary);font-weight:600;font-size:13px">View →</a>
+</div>
+<div style="border:1px solid var(--border);border-radius:12px;padding:30px;text-align:center;background:#fff">
+<h3 style="font-size:18px;font-weight:700;margin-bottom:12px">Clinch</h3>
+<p style="color:var(--gray);font-size:13px;margin-bottom:16px;font-weight:500">Professional web presence & branding.</p>
+<a href="#" style="color:var(--primary);font-weight:600;font-size:13px">View →</a>
+</div>
+</div>
+</div>
+</section>
+
+<!-- WHY THIS WORKS -->
+<section style="padding:120px 20px;background:#fff;border-bottom:1px solid var(--border)">
+<div style="max-width:1200px;margin:0 auto;text-align:center">
+<div class="section-head">
+<div class="section-label">The Results</div>
+<h2>What You Can Expect</h2>
+<p>Real numbers from contractors who've worked with us.</p>
+</div>
+<div style="display:grid;grid-template-columns:1fr 1fr 1fr;gap:30px;max-width:1000px;margin:0 auto">
+<div style="padding:30px;border:1px solid var(--border);border-radius:12px;background:#f8fafc">
+<h3 style="font-size:28px;font-weight:800;color:var(--primary);margin-bottom:8px">2-3 weeks</h3>
+<p style="color:var(--gray);font-size:14px;font-weight:500">Ranking improves. You start showing up higher on Google Maps.</p>
+</div>
+<div style="padding:30px;border:1px solid var(--border);border-radius:12px;background:#f8fafc">
+<h3 style="font-size:28px;font-weight:800;color:var(--primary);margin-bottom:8px">30-45 days</h3>
+<p style="color:var(--gray);font-size:14px;font-weight:500">Calls start flowing. Customers can find you. Leads come in.</p>
+</div>
+<div style="padding:30px;border:1px solid var(--border);border-radius:12px;background:#f8fafc">
+<h3 style="font-size:28px;font-weight:800;color:var(--primary);margin-bottom:8px">20-30%</h3>
+<p style="color:var(--gray);font-size:14px;font-weight:500">More calls by day 60. Proven result. That's what we target.</p>
+</div>
+</div>
+</div>
+</section>
+
 <!-- CONTACT & ORDER -->
 <section class="contact-section" id="contact">
 <div class="contact-container">
@@ -297,8 +386,8 @@ footer{background:var(--dark);color:#666;padding:50px 20px;border-top:1px solid 
 <p>See exactly why you're not ranking higher and what we'll do to fix it.</p>
 <div class="contact-buttons">
 <a href="tel:4024432909" class="contact-btn">Call (402) 443-2909</a>
-<a href="mailto:braylonwimer@gmail.com" class="contact-btn">Email Me</a>
-<a href="sms:4024432909" class="contact-btn">Text Me</a>
+<a href="mailto:braylonwimer@gmail.com" class="contact-btn">Email</a>
+<a href="sms:4024432909" class="contact-btn">Text</a>
 </div>
 <div class="form-embed">
 <h3>Or fill out the form below</h3>
