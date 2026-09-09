@@ -63,7 +63,7 @@ header{background:linear-gradient(135deg,#fff 0%,#f8fafc 100%);padding:100px 20p
 .section-head h2{font-size:48px;font-weight:800;margin-bottom:16px;letter-spacing:-1px}
 .section-head p{color:var(--gray);max-width:620px;font-size:16px;font-weight:500;line-height:1.7}
 .services-grid{display:grid;grid-template-columns:1fr 1fr 1fr;gap:28px;max-width:1200px;margin:0 auto}
-.service-card{border:1px solid var(--border);border-radius:12px;padding:40px;background:#fff;transition:.2s}
+.service-card{border:1px solid var(--border);border-radius:12px;padding:40px;background:#fff;transition:.2s;display:flex;flex-direction:column}
 .service-card:hover{border-color:var(--primary);transform:translateY(-4px);box-shadow:0 12px 32px rgba(31,69,232,0.12)}
 .service-card.featured{background:linear-gradient(135deg,#e7ebfd 0%,#f0f4ff 100%);border-color:var(--primary)}
 .service-icon{width:56px;height:56px;margin-bottom:20px;display:flex;align-items:center;justify-content:center}
@@ -76,7 +76,7 @@ header{background:linear-gradient(135deg,#fff 0%,#f8fafc 100%);padding:100px 20p
 .service-card li{font-size:14px;color:var(--gray);padding:10px 0;border-bottom:1px solid #f0f0f0;font-weight:500}
 .service-card li:before{content:'✓ ';color:var(--primary);font-weight:700;margin-right:8px}
 .service-card li:last-child{border:none}
-.order-btn{background:var(--primary);color:#fff;padding:13px 24px;border-radius:8px;border:none;cursor:pointer;font-weight:600;margin-top:24px;transition:.2s;width:100%;font-size:14px;box-shadow:0 2px 8px rgba(31,69,232,0.2)}
+.order-btn{background:var(--primary);color:#fff;padding:13px 24px;border-radius:8px;border:none;cursor:pointer;font-weight:600;margin-top:auto;transition:.2s;width:100%;font-size:14px;box-shadow:0 2px 8px rgba(31,69,232,0.2)}
 .order-btn:hover{background:#1a36c4;box-shadow:0 4px 12px rgba(31,69,232,0.3)}
 @media(max-width:900px){.services-grid{grid-template-columns:1fr}}
 
